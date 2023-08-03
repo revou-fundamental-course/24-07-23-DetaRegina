@@ -1,0 +1,207 @@
+/* Layout CSS ada di https://css-tricks.com/snippets/ */
+
+body{
+    font-family: 'Gill Sans MT';
+}
+
+/* HEADER */
+
+#headerNavigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    font-size: 24px;
+    padding-left: 50px;
+    padding-right: 30px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+#logo{
+    font-size: 42px;
+    font-family: 'Segoe UI';
+    float: left;
+    color: black;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#navigation ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#navigation ul li{
+    float: left;
+}
+
+#navigation ul li a{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px 16px 0px 16px;
+}
+
+
+/* MAIN */
+
+main{
+    background-color: #EEF1FF;
+}
+
+
+#headerTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-size: 24px;
+    background-color: #EEF1FF;
+}
+
+#subtitle{
+    color: #7858A6;
+    font-size: 20px;
+}
+
+#contactUs{
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+#article{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    max-width: 600px;
+    font-size: 24px;
+}
+
+#tagline{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 35px;
+}
+
+#identity{
+    color: #7858A6;
+}
+
+.mySlides{
+    border-image: 5px;
+    border-radius: 10px;
+    width:600px;
+    height:400px;
+}
+
+#dataInput{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    height: 35px;
+    border-radius: 5px;
+}
+
+#form{
+    background-color: #D2DAFF;
+    padding: 50px;
+    padding-top: 30px;
+    border-radius: 15px;
+    margin-right: 20px;
+    max-height: 600px;
+}
+
+.textSubtitle{
+    color: #7858A6;
+}
+
+#textInfo{
+    max-width: 600px;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+#fitureOrder{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 35px;
+}
+
+/* PACKAGE */
+
+#titlePackage{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    background-color: #D2DAFF;
+    padding: 60px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.cityName{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-left: 100px;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.cityRow1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.cityRow2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.cityTitle{
+    font-size: 28px;
+}
+
+.subtext{
+    font-size: 20px;
+}
+
+#closing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#closingTitle{
+    font-size: 36px;
+    margin-top: 50px;
+    padding-bottom: 0px;
+}
+
+#closingTagline{
+    font-size: 24px;
+}
+
+/* FOOTER */
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer1{
+    display: flex;
+    gap: 20px;
+}

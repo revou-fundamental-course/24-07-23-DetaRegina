@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Travel Agent</title>
+    <style>
+        .button{
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            background-color: #9C9EFE;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- NAV SECTION -->
+        <nav id="headerNavigation">
+            <section id="logo">
+                <a href="">Travel Agent</a>
+            </section>
+            <section id="navigation">
+                <ul>
+                    <li><a href="#headerTitle">Home</a></li>
+                    <li><a href="#ourPackage">Our Package</a></li>
+                    <li><a href="#closing">Call Us</a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+    <hr>
+
+    <main id="main">
+        <!-- TITLE SECTION -->
+        <section id="headerTitle">
+            <h1>
+                Your Trusted Travel Agent's
+            </h1>
+            <h2 id="subtitle">
+                Your happiness is our happiness
+            </h2>
+        </section>
+        <!-- HOME SECTION -->
+        <section id="contactUs">
+            <article id="article">
+                <img class="mySlides" src="https://wallpapercave.com/wp/wc1706622.jpg" alt="Forest" >
+                <img class="mySlides" src="https://wallpapercave.com/wp/wp2722874.jpg" alt="Bridge" >
+                <img class="mySlides" src="https://jooinn.com/images/beauty-of-nature-24.jpg" alt="River" >
+                <img class="mySlides" src="https://wallup.net/wp-content/uploads/2016/03/10/318220-photography-nature-water-landscape-lake-plants-trees.jpg" alt="Lake" >
+                <script>
+                    var myIndex = 0;
+                    carousel();
+                    
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                      
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+
+                        myIndex++;
+                        if (myIndex > x.length) {
+                            myIndex = 1
+                        }    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 2000); 
+                    }
+                </script>
+                <p id="tagline">
+                    <i>
+                        "Liburan menjadi lebih menyenangkan bersama Travel Agenku"
+                    </i><br>
+                    <b id="name">
+                        Rini Ramadani
+                    </b>
+                    <i id="identity">
+                        Traveller, 25
+                    </i>
+                </p>
+                
+            </article>
+
+            <section id="form">
+                <h2 class="titleSubtitle">Contact Us</h2>
+                <p class="textSubtitle">
+                    Sales kami akan menghubungi anda 1x24 jam setelah data kami terima
+                </p>
+                <form id="dataInput">
+                    <label for="name">Your name:</label>
+                    <input type="text" class="input" name="name"><br>
+                    <label for="email">Email address:</label>
+                    <input type="email" class="input" name="email"><br>
+                    <label for="interest">What are you interested in?</label>
+                    <select class="input">
+                        <option>Bali</option>
+                        <option>Bandung</option>
+                        <option>Surabaya</option>
+                        <option>Singapore</option>
+                        <option>Jepang</option>
+                        <option>Korea Selatan</option>
+                    </select><br><br>
+                    <button class="button button1" type="submit" value="send" style="height: 50px; font-size: 20px;">SEND</button>
+                  </form>
+            </section>
+        </section>
+
+        <section id="textInfo">
+            <h3>
+                Mengapa Anda harus menggunakan jasa Travel Agent?
+            </h3>
+
+            <ol type="1" id="fitureOrder">
+                <li>Reservasi perjalanan kapanpun dan dimanapun</li>
+                <li>Buat rencana perjalanan sesuai keinginan</li>
+                <li>Konsultasi dengan agen kami untuk perjalanan tour</li>
+            </ol>
+        </section>
+
+        <!-- OUR PACKAGE -->
+        <section id="ourPackage">
+            <h2 id="titlePackage">
+                Our Package
+            </h2>
+        </section>
+
+        <section class="cityName">
+            <section class="cityRow1">
+                <article id="Bali">
+                    <h3 class="cityTitle">Bali</h3>
+                    <p class="subtext">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </article>
+                <article id="Jepang">
+                    <h3 class="cityTitle">Jepang</h3>
+                    <p class="subtext">Travel dan wisata di Jepang. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </article>
+                <article id="Singapore">
+                    <h3 class="cityTitle">Singapore</h3>
+                    <p class="subtext">Travel dan wisata di Singapore. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </article>
+            </section>
+            <section class="cityRow2">
+                <article id="Bandung">
+                    <h3 class="cityTitle">Bandung</h3>
+                    <p class="subtext">Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </article>
+                <article id="Surabaya">
+                    <h3 class="cityTitle">Surabaya</h3>
+                    <p class="subtext">Travel dan wisata di Surabaya. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </article>
+                <article id="koreaSelatan">
+                    <h3 class="cityTitle">Korea Selatan</h3>
+                    <p class="subtext">Travel dan wisata di Korea Selatan. Kunjungi cagar budaya dan kuliner yang menarik</p>
+                </article>
+            </section>
+        </section>
+        <hr>
+
+        <!-- CLOSING -->
+        <section id="closing">
+            <h2 id="closingTitle">
+                Come & Travel with Us
+            </h2>
+            <p id="closingTagline">
+                Lakukan reservasi untuk liburan yang lebih menyenangkan
+            </p>
+            <button class="button button2" type="button" value="contact" style="height: 70px; width: 300px; font-size: 24px; margin-bottom: 35px;">Reservasi sekarang</button>
+        </section>
+        <hr>
+    </main>
+    <!-- BOTTOM -->
+    <footer id="footer">
+        <section class="footer1">
+            <p>
+                Terms of Service
+            </p>
+            <p>
+                Privacy Policy 
+            </p>
+        </section>
+        
+        <p id="footer2">
+            2023 Travel Agent
+        </p>
+    </footer>
+</body>
+</html>
